@@ -33,7 +33,7 @@ This application allows you to manage a fishing fleet and calculate catch quotas
 
 ## Contributing
 
-Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request on the https://github.com/Sayemchy2801/U10787
+Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request on the (https://github.com/Sayemchy2801/FishingFleetQuotaApp)
 
 ## License
 
