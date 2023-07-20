@@ -33,7 +33,7 @@ namespace FishingFleetQuotaApp
         {
             InitializeComponent();
             boats = new List<Boat>();
-            speciesList = new List<string>() { "Cod", "Salmon", "Tuna", "Snapper" };
+            speciesList = new List<string>() { "Angler", "Cod", "Haddock", "Hake", "Horse mackerel", "Witches", "Plaice", "Skates and rays", "Whiting"};
             InitializeSpeciesList();
         }
 
@@ -341,17 +341,27 @@ namespace FishingFleetQuotaApp
 
         public double GetQuota(string species)
         {
-            // Placeholder implementation
+            // Updated implementation with the catch limits for each species
             switch (species)
             {
+                case "Angler":
+                    return 8.0; // Catch limit of 8 tonnes for Angler
                 case "Cod":
-                    return 4.0; // Assuming a quota of 4 tonnes for Cod
-                case "Salmon":
-                    return 2.5; // Assuming a quota of 2.5 tonnes for Salmon
-                case "Tuna":
-                    return 3.0; // Assuming a quota of 3 tonnes for Tuna
-                case "Snapper":
-                    return 1.8; // Assuming a quota of 1.8 tonnes for Snapper
+                    return 1.0; // Catch limit of 1 tonne for Cod
+                case "Haddock":
+                    return 3.5; // Catch limit of 3.5 tonnes for Haddock
+                case "Hake":
+                    return 15.0; // Catch limit of 15 tonnes for Hake
+                case "Horse mackerel":
+                    return 0.5; // Catch limit of 0.5 tonnes for Horse mackerel
+                case "Witches":
+                    return 1.5; // Catch limit of 1.5 tonnes for Witches
+                case "Plaice":
+                    return 8.0; // Catch limit of 8 tonnes for Plaice
+                case "Skates and rays":
+                    return 2.0; // Catch limit of 2 tonnes for Skates and rays
+                case "Whiting":
+                    return 3.0; // Catch limit of 3 tonnes for Whiting
                 default:
                     return 0; // If the species is not found or quota information is missing, return 0
             }
